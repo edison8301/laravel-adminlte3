@@ -146,21 +146,21 @@ class <?= $modelName; ?> extends BaseModel
 
     public function getLinkReadButton()
     {
-        return Html::a('<i class="fa fa-eye"></i> Lihat', url("<?= $urlName; ?>/read/<?= '$this->id'; ?>"),[
+        return Html::a('<i class="fa fa-eye"></i> Lihat', url("<?= $urlName; ?>/read?id=<?= '$this->id'; ?>"),[
             'class' => 'btn btn-success btn-flat'
         ]);
     }
 
     public function getLinkUpdateButton()
     {
-        return Html::a('<i class="fa fa-pencil"></i> Ubah', url("<?= $urlName; ?>/update/<?= '$this->id'; ?>"),[
+        return Html::a('<i class="fa fa-pencil"></i> Ubah', url("<?= $urlName; ?>/update?id=<?= '$this->id'; ?>"),[
             'class' => 'btn btn-success btn-flat'
         ]);
     }
 
     public function getLinkDeleteButton()
     {
-        return Html::a('<i class="fa fa-trash"></i> Hapus', url("<?= $urlName; ?>/delete/<?= '$this->id'; ?>"),[
+        return Html::a('<i class="fa fa-trash"></i> Hapus', url("<?= $urlName; ?>/delete?id=<?= '$this->id'; ?>"),[
             'class' => 'btn btn-success btn-flat',
             'onclick'=>'return confirm("Yakin akan menghapus data?")'
         ]);
