@@ -20,6 +20,8 @@ use App\Components\GridView;
 
 class <?= $modelName; ?>Controller extends Controller
 {
+    public $layout = 'layouts.backend.main';
+
     public function __construct()
     {
         $this->middleware('auth');
