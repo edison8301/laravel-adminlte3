@@ -6,9 +6,9 @@
     <div class="login-box">
 
         <div class="login-logo">
-            <img src="{{ asset('/images/logo-login.png') }}" style="width: 180px">
+            <img src="{{ asset('/images/logo-login.png') }}" style="height: 100px">
             <br>
-            <a href="#">TOR-BAPPENAS</a>
+            <a href="#">NAMA APLIKASI</a>
         </div>
 
         <form method="POST" action="{{ route('login') }}">
@@ -40,11 +40,7 @@
                             @enderror
 
                         </div>
-                        <div class="form-group field-loginform-tahun">
 
-                            <input id="tahun" type="number" class="form-control @error('tahun') is-invalid @enderror" name="tahun" value="{{ old('tahun') != null ? old('tahun') : (date('Y') + 1)  }}" required autocomplete="email" placeholder="Tahun" autofocus>
-
-                        </div>
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-8">
