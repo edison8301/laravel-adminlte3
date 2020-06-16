@@ -24,7 +24,7 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <?php if(Session::isAdmin()) { ?>
-                @include('layouts.menu-admin')
+                @include('layouts.backend.menu-admin')
             <?php } ?>
         </nav>
         <!-- /.sidebar-menu -->

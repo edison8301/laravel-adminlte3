@@ -10,6 +10,8 @@ use App\Components\GridView;
 
 class UserController extends Controller
 {
+    public $layout = 'layouts.backend.main';
+
     public function __construct()
     {
         $this->middleware('auth');

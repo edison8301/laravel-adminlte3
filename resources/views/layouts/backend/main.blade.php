@@ -26,23 +26,23 @@
     <div class="wrapper">
 
         <!-- Navbar -->
-        @include('layouts.nav')
+        @include('layouts.backend.nav')
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        @include('layouts.sidebar')
+        @include('layouts.backend.sidebar')
         <!-- /.Main Sidebar Container -->
 
         <!-- Content Wrapper. Contains page content -->
-        @include('layouts.content')
+        @include('layouts.backend.content')
         <!-- /.content-wrapper -->
 
         <!-- Control Sidebar -->
-        @include('layouts.controlbar')
+        @include('layouts.backend.controlbar')
         <!-- /.control-sidebar -->
 
         <!-- Admin Footer -->
-        @include('layouts.footer')
+        @include('layouts.backend.footer')
     </div>
     <!-- ./wrapper -->
 

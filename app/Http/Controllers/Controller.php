@@ -11,6 +11,6 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-    public $layout = 'layouts.main';
+    public $layout = 'layouts.backend.main';
 
 }
