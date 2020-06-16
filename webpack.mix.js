@@ -13,4 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
-    .css('resources/sass/login.css', 'public/css');
+    .css('resources/sass/login.css', 'public/css')
+    .copy('node_modules/font-awesome/fonts', 'public/fonts')
+    .copy('node_modules/font-awesome/css/font-awesome.css', 'public/css');

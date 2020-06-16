@@ -15,22 +15,20 @@ class DashboardController extends Controller
 
     public function index()
     {
-        if(Session::isUnit()) {
-            return redirect(url('/dashboard/unit'));
+        if(Session::isAdmin()) {
+            return redirect(url('/dashboard/admin'));
         }
 
-        return view('dashboard.index',[
-            'layout' => $this->layout
-        ]);
+        return abort(404);
     }
 
-    public function unit()
+    public function admin()
     {
-        if(Session::isUnit()==false) {
+        if(Session::isAdmin()==false) {
             return redirect(url('/dashboard/index'));
         }
 
-        return view('dashboard.unit',[
+        return view('dashboard.admin',[
             'layout' => $this->layout
         ]);
     }

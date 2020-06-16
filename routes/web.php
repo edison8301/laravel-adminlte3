@@ -21,6 +21,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/dashboard','DashboardController@index')->name('dashboard.index');
+Route::get('/dashboard/index','DashboardController@index')->name('dashboard.index');
+Route::get('/dashboard/admin','DashboardController@admin')->name('dashboard.admin');
+
 Route::get('/gii/generate', 'GiiController@generate')->name('gii.generate');
 Route::get('/gii/model', 'GiiController@model')->name('gii.model');
 Route::get('/gii/controller', 'GiiController@controller')->name('gii.controller');
